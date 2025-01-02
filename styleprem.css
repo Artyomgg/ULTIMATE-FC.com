@@ -28,8 +28,8 @@ body {
 
 .container-card {
 	perspective: 1000px;
-	width: 70%;
-	height: 30%;
+	width: 400px;
+	height: 250px;
 }
 
 .card {
@@ -67,8 +67,8 @@ body {
 }
 
 .im1 {
-	width: 40px;
-	transform: rotate(90deg);
+	width: 60px;
+	height: 60px;
 }
 
 .im2 {
@@ -78,6 +78,7 @@ body {
 .block-img {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .h2 {
@@ -172,7 +173,6 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 15px;
 }
 
 .line1 {
@@ -187,7 +187,7 @@ form {
 
 .line2 {
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 }
 
 .block-line .line2 input {
@@ -387,7 +387,7 @@ a.button10:active {
 	flex-direction: column;
 }
 .wrapper p{
-	width: 50%;
+	min-width: 50%;
 	color: #0c9c0d;
 	font-size: 25px;
 }
@@ -405,7 +405,7 @@ a.button10:active {
 .crossPrem{
 	display: flex;
 	justify-content: end;
-	width: 50%;
+	width: 100%;
 }
 
 .return{
@@ -420,3 +420,83 @@ a.button10:active {
 	text-decoration: none;
 	color: black;
 }
+
+
+
+@media screen and (max-width:650px){
+	.container-card{
+		width: 350px;
+		height: 200px;
+	}
+	form{
+		width: 90%;
+		margin-top: -100px;
+	}
+}
+@media screen and (max-width:430px){
+	.container-card{
+		width: 270px;
+		height: 170px;
+	}
+	form{
+		width: 90%;
+		font-size: 12px;
+		margin-top: -120px;
+		height: 480px;
+	}
+	.line1 label{
+		font-size: 12px;
+	}
+	.block-str img{
+		width: 50px;
+	}
+	.im1{
+		width: 50px;
+		height: 50px;
+	}
+
+	.im2{
+		width: 70px;
+	}
+
+	.inh2{
+		font-size: 10px;
+	}
+
+	.card-label h2{
+		font-size: 12px;
+	}
+	.info h2{
+		font-size: 10px;
+	}
+
+	.block-black{
+		height: 30px;
+	}
+	.auto{
+		font-size: 11px;
+	}
+	.auto-h2{
+		padding: 5px;
+		font-size: 10px;
+	}
+}
+@media screen and (max-width:430px){
+	.container-card{
+		width: 240px;
+		height: 150px;
+	}
+}
+@media screen and (max-width:800px){
+	.wrapper p{
+		font-size: 20px;
+	}
+
+	.wrapper h2{
+		font-size: 25px;
+	}
+}
+
+
+
+
