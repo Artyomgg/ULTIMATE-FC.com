@@ -1,0 +1,96 @@
+.header {
+	overflow: hidden;
+	background-color: #3c5e2c;
+	padding: 40px 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Стиль ссылок шапки */
+.header-right .block-burger a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	transition: 1s;
+}
+
+/* Стиль ссылки логотипа */
+.header a.logo {
+	display: flex;
+	justify-content: end;
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+/* Изменение цвета фона при наведении курсора */
+.header-right .block-burger a:hover {
+	color: black;
+	background-color: #ddd;
+}
+
+/* Стиль активной/текущей ссылки */
+.header-right .block-burger a.active {
+	background-color: dodgerblue;
+	color: gold;
+}
+
+/* Сдвигаем секцию со ссылками вправо */
+
+/* Медиа-запрос для адаптивности – когда ширина
+    экрана 650px или меньше, ссылки будут друг над другом */
+@media screen and (max-width: 650px) {
+	.header-right .block-burger a {
+		display: block;
+		text-align: left;
+	}
+	.header-right {
+		float: none;
+	}
+}
+
+.header-right {
+	width: 100%;
+	height: 20%;
+	background: rgba(0, 0, 0, 0.759);
+	position: absolute;
+	z-index: 100000000;
+	top: 0;
+	display: none;
+}
+
+.logo > img {
+	width: 40px;
+}
+
+.im {
+	height: 50px;
+	cursor: pointer;
+	transition: 1s ease;
+}
+
+.im:hover {
+	box-shadow: 2px 2px 20px 0.5px black;
+}
+
+.crossburger i {
+	color: white;
+	font-size: 30px;
+}
+
+.crossburger {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
